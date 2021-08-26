@@ -1,0 +1,8 @@
+.homeinfo{
+    background-image: url("../../assets/ecom2.jpg");
+    height: 40rem;
+    max-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

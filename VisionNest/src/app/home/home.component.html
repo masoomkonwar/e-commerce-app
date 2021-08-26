@@ -1,0 +1,82 @@
+
+<div class="text-center p-2 maindiv " >
+  <div class="text-center py-2 text-light rounded shadow mb-2 " style="background-image: linear-gradient(15deg, #E55D87 0%, #5FC3E4 100%);">
+  
+          <h2 class="text-warning" style="font-family: 'Times New Roman', Times, serif">VISION-NEST</h2>
+
+      </div>
+ <div class="homeinfo d-flex justify-content-center px-4 align-items-center flex-column">
+
+      <div class=" p-3 my-2 "  style="border-radius: 5%">
+              <div class="row justify-content-center">
+                      <h1 class="text-white"  style="font-family: 'Times New Roman', Times, serif; color: navy"><b>E COMMERSE</b> </h1>
+                    
+                      
+                  </div> 
+                  <div class="row justify-content-center">
+                        
+                          <h1 class="text-white" style="font-family: 'Times New Roman', Times, serif;color: navy"><b> WEB APPLICATION</b> </h1>
+                          
+                      </div> 
+                  <div class="row justify-content-center ">
+                          <h4 class="text-white" style="font-family: 'Times New Roman', Times, serif"><span class="text-warning">created by :</span>  MASOOM KONWAR </h4>
+                      </div> 
+                      <div class="row justify-content-center">
+                              <h4 class="text-white" style="font-family: 'Times New Roman', Times, serif"><span class="text-warning">email :</span> msmkonwar@gmail.com</h4>
+                          </div>
+                      
+      </div>
+     
+
+ </div>
+  
+ <div class="container-flud " >
+  <div class="accordion" id="accordionExample">
+    <div class="" style="background: linear-gradient(to left,#b92b27,#1565C0);">
+      <div class="" id="headingOne" style="background: linear-gradient(to left,#f12711,#f5af19);">
+        <h2 class="mb-0">
+          <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" style="text-decoration: none;" aria-expanded="true" aria-controls="collapseOne">
+            TOP PRODUCTS
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="" style="background: linear-gradient(to left,#b92b27,#1565C0);">
+
+          <div class="row">
+
+            <div *ngFor="let product of products" class="col-sm-4 col-lg-3 my-3">
+  
+                <div class="card" >
+              <div class="card-header text-white text-center" style="font-family: 'Times New Roman', Times, serif;height: 4rem;background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));background: linear-gradient(to right, #ee5a6f, #f29263)">
+                {{product.name}}
+              </div>
+              <div class="card-body m-0 p-0" style="height:auto;">
+                  <img src={{product.image}} class="img-fluid m-0 p-0" alt="" srcset="" (click)="onProdClick(product.id)" style="cursor: pointer;">
+              </div>
+              <div class="card-footer bg-dark text-white text-right">
+                  price - {{product.price}} <button class="btn btn-outline-warning btn-rounded ml-auto" >add for later</button>
+              </div>
+            
+            </div>
+            </div>
+
+            
+          
+      
+
+
+
+            </div>
+          </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <div>
+    <div class="row d-flex justify-content-center p-2 my-2 " style="background: linear-gradient(to left,#f12711,#f5af19);">
+      <a style="text-decoration: none; " class="text-white" routerLink="/colleges/1"> GO TO PRODUCTS</a>
+    </div>
+  </div>

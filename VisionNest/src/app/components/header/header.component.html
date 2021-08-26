@@ -1,0 +1,33 @@
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/logo/rent01.jpeg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        VISIONNEST</a>
+    <button class="navbar-toggler" style="height: 4rem;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/colleges/1" routerLinkActive>PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/FAQ" routerLinkActive>FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/About" routerLinkActive>About Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/profile">{{authState==false?'Log in':'MyAccount'}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/register" *ngIf="!authState">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

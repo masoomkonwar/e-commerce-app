@@ -1,0 +1,25 @@
+<div class="container my-4">
+  <div class="row">
+
+    <div *ngFor="let product of products" class="col-sm-6 col-lg-4 my-3">
+
+        <div class="card" >
+      <div class="card-header text-white text-center" style="height: 4rem;font-family: 'Times New Roman', Times, serif;background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));background: linear-gradient(to right, #ee5a6f, #f29263)">
+        {{product.name}}
+      </div>
+      <div class="card-body m-0 p-0" style="height:auto;">
+          <img src={{product.image}} class="img-fluid m-0 p-0" alt="" srcset="" (click)="onProdClick(product.id)" style="cursor: pointer;">
+      </div>
+      <div class="card-footer bg-dark text-white text-right">
+          price - {{product.price}} <button class="btn btn-outline-warning ml-auto" >add for later</button>
+      </div>
+    
+    </div>
+    </div>
+</div>
+
+
+<div class="text-center mb-4">
+  <button class="btn btn-outline-warning mr-1 " (click)="goPrev()">PREVIOUS</button>
+<button class="btn btn-outline-warning ml-1" (click)="goNext()">  NEXT</button>
+</div>
